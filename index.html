@@ -8,7 +8,16 @@
 	    
         <style>
            
-             
+              @media (min-width: 500px) {
+              h1::before {
+                 content: "Your local and global COVID-19 update";
+                }
+          }
+           @media (max-width: 499px) {
+              h1::before {
+                 content: "COVID-19 Update";
+                }
+          }
 	
 		.grid {
             background-color:green;
