@@ -22,7 +22,7 @@
                 		}
          		}
 	.container {
-		display: inline;
+		display: inline-table;
 		padding:20px;
 		margin-right: 20px;
 		margin-left: 20px;
@@ -33,7 +33,7 @@
             	padding: 20px;
             	grid-column-gap: 20px;
             	grid-raw-gap: 10px;
-            	grid-template-columns: 200px, auto, auto;
+            	grid-template-columns: auto, auto, auto, auto;
 		margin-right: 20px;
 		margin-left: 20px;
             }
@@ -50,9 +50,10 @@
             }
             
             	.table {
-            	border: 2px solid black
-            	width: 50%;
-		Margin-left; 20px;
+		display: inline-table;
+            	border: 2px solid black;
+            	width: 100%;
+		Margin-left; 50px;
                }
 		th, td {      
             border: 1px solid black;
