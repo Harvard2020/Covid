@@ -10,6 +10,32 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    
         <style>
+		
+		.error {
+  			border: 1px #f00;
+  			background-color: #fdd;
+
+ 			 &--serious {
+    			@extend .error;
+    			border-width: 3px;
+  			}
+		}
+		
+		.error:hover {
+  			background-color: #fee;
+			}
+
+			.error--serious {
+  			@extend .error;
+  			border-width: 3px;
+			}
+		.alert:hover, %strong-alert {
+  font-weight: bold;
+}
+
+%strong-alert:hover {
+  color: red;
+}
            
               @media (min-width: 500px) {
               		p::before {
@@ -24,8 +50,8 @@
 	.container {
 		display: inline-table;
 		padding:20px;
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
 		}
 		
 		.grid {
@@ -34,8 +60,8 @@
             	grid-column-gap: 20px;
             	grid-raw-gap: 10px;
             	grid-template-columns: auto, auto, auto, auto;
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
             }
 		.grid-item {
             	disply: grid;
@@ -44,8 +70,8 @@
             	grid-row-gap: 20px;
             	grid-template-columns: auto, auto, auto, auto;
            	text-align: center;
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
 		font-size= 30px;
             }
             
@@ -53,7 +79,7 @@
 		display: inline-table;
             	border: 2px solid black;
             	width: 100%;
-		Margin-left; 50px;
+		Margin-left; 10px;
                }
 		th, td {      
             border: 1px solid black;
