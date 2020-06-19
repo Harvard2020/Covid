@@ -53,13 +53,30 @@
 		display: inline-block;
 		width: 100%;
 		margin-top: 200px;
-		margin-left: 20px;
+		margin-left: 25px;
 		}
 		.container .btn {
 		display: inline-block;
 		text-align: center;
 		font-weight: bold;
-		grid-raw-gap: 5px;
+		grid-raw-gap: 10px;
+            	grid-template-columns: 200px, 200px, 200px, 200px;
+		grid-template-rows: 200px, 200px, 200px, 200px;
+		background-color: blue;
+  		color: white;
+  		font-size: 30px;
+  		padding: 20px;
+  		border: none;
+  		cursor: pointer;
+  		border-radius: 5px;
+		Margin-top: 200px;
+		Margin-left:20px;
+		}
+		.container .btn a {
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+		grid-raw-gap: 10px;
             	grid-template-columns: 200px, 200px, 200px, 200px;
 		grid-template-rows: 200px, 200px, 200px, 200px;
 		background-color: blue;
@@ -93,7 +110,7 @@
             	padding: 20px;
             	grid-column-gap: 20px;
             	grid-raw-gap: 10px;
-            	grid-template-columns: auto, auto, auto, auto;
+            	grid-template-columns: 200px, 200px, 200px, 200px;
 		margin-right: 5px;
 		margin-left: 5px;
             }
@@ -102,7 +119,7 @@
             	padding: 20px;
             	grid-column-gap: 20px;
             	grid-row-gap: 20px;
-            	grid-template-columns: auto, auto, auto, auto;
+            	grid-template-columns: 200px, 200px, 200px, 200px;
            	text-align: center;
 		margin-right: 5px;
 		margin-left: 5px;
@@ -113,7 +130,7 @@
 		display: inline-table;
             	border: 2px solid black;
             	width: 100%;
-		Margin-left; 10px;
+		Margin-left; 20px;
                }
 		th, td {      
             border: 1px solid black;
@@ -225,11 +242,14 @@
          	
 		<div class"container">
 			<p> </p>
-  			<button class="btn">Home</button>
+			<div class="btn">
+				<<a href="https://harvard2020.github.io/project0/"  class="btn">Home</a></div>
 			<button class="btn">About us</button>
 			<button class="btn">Login</button>
 			<button class="btn">Registration</button>
 		</div>
+		
+		
 			<div class="row">
 			<div class= "col-md-3"> Total positive cases </div>
 			<div class= "col-md-3"> New positive cases </div>
